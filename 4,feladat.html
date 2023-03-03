@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.Feladat</title>
+</head>
+<body>
+    <div>
+        <label for="a" class="form-label">Kérlek adjon meg egy számot:</label>
+        <input type="number" name="Kérlek adjon meg egy számot:" id="a">
+    </div>
+    <button type="submit" id="hozzaad">megoldas</button>
+    <p id="megoldas"></p>
+    <script>
+        const a = parseFloat(document.getElementById("a").value)
+        const hozzaad = document.getElementById("hozzaad")
+        const megoldas = document.getElementById("megoldas")
+
+        hozzaad.addEventListener('click', ()=>{
+            if (a==1){
+                megoldas.innerHTML="Hétfő"
+            }
+            else if (a==2){
+                megoldas.innerHTML="Kedd"
+            }
+            else if (a==3){
+                megoldas.innerHTML="Szerda"
+            }
+            else if (a==4){
+                megoldas.innerHTML="Csütörtök"
+            }
+            else if (a==5){
+                megoldas.innerHTML="Péntek"
+            }
+            else if (a==6){
+                megoldas.innerHTML="Szombat"
+            }
+            else if (a==7){
+                megoldas.innerHTML="Vasárnap"
+            }
+            else{
+                megoldas.innerHTML="Nem megfelelő számot adott meg"
+            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.Feladat</title>
+</head>
+<body>
+    <section>
+        <h2>Addatok hozzáadása</h2>
+            <div>
+                <label for="Keresztnev" class="form-label">Adja meg a Keresztnevét:</label>
+                <input type="text" name="Adja meg a Keresztnevét:" id="Keresztnev">
+            </div>       
+            <div>
+                <label for="Vezeteknev" class="form-label">Adja meg a Vezetéknevét:</label>
+                <input type="text" name="Adja meg a Vezetéknevét:" id="Vezeteknev">
+            </div>       
+            <div>
+                <label for="Eletkor" class="form-label">Adja meg az Életkorát:</label>
+                <input type="number" name="Adja meg az Életkorát:" id="Eletkor">
+            </div>
+            <p id="visszajelzes"></p>       
+    </section>
+    <script>
+        const Vezeteknev = document.getElementById("Vezeteknev")
+        const Keresztnev = document.getElementById("Keresztnev")
+        const eletkor = document.getElementById("Eletkor")
+        const visszajelzes = document.getElementById("visszajelzes")
+        visszajelzes.innerHTML = Vezeteknev.value+ " " + Keresztnev.value + " " + eletkor.value +"év"; 
+    </script>
+</body>
+</html>

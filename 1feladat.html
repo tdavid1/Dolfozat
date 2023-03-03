@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.Feladat</title>
+</head>
+<body>
+    <section>
+        <h2>Addatok hozzáadása</h2>
+            <div>
+                <label for="szam" class="form-label">Adjon meg egy számot:</label>
+                <input type="text" name="Adjon meg egy számot" id="szam">
+            </div>
+            <button type="submit" id="hozzaad">hozzáad</button>
+            <button type="button" id="megjelenit">kiir</button>        
+    </section>
+    <section>
+        <h2>Addatok megjelenitése</h2>
+        <p id="megjelenites"></p>
+    </section>
+    <script>
+        var lista = new Array();
+        const szam = document.getElementById("szam");
+        const hozzaad = document.getElementById("hozzaad"); 
+        const megjelenit = document.getElementById("megjelenit");
+        const megjelenites = document.getElementById("megjelenites");
+
+        hozzaad.addEventListener('click', () =>{  
+            lista.push(szam.value);
+            console.log(lista);
+            alert(lista);
+        })
+        megjelenit.addEventListener('click', ()=>{
+            let html = "";
+            for (let i = 0; i < lista.length; i++){
+                const elem = lista[i]+",";
+                html+=elem;
+            }
+            megjelenites.innerHTML=html;
+        })
+    </script>
+</body>
+</html>

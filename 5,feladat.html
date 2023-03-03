@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.Feladat</title>
+</head>
+<body>
+    <div>
+        <label for="nev" class="form-label">Megrendelő Teljes Neve:</label>
+        <input type="text" name="Megrendelő Teljes Neve:" id="nev">
+    </div>
+    <div>
+        <label for="telefonszam" class="form-label">Telefonszam:</label>
+        <input type="text" name="Telefonszam:" id="telefonszam">
+    </div>
+    <div>
+        <label for="iranyitoszam" class="form-label">Irányitoszám:</label>
+        <input type="number" name="iranyitoszam:" id="iranyitoszam">
+    </div>
+    <div>
+        <label for="varos" class="form-label">Varos:</label>
+        <input type="text" name="Varos:" id="varos">
+    </div>
+    <div>
+        <label for="utca" class="form-label">Utca:</label>
+        <input type="text" name="Utca:" id="utca">
+    </div>
+    <div>
+        <label for="hazszam" class="form-label">Házszám:</label>
+        <input type="text" name="Házszám:" id="hazszam">
+    </div>
+    <div>
+        <label for="alap" class="form-label">Alap:</label>
+        <select name="Alap:" id="alap">
+            <option value="Tejfolos">Tejfölös</option>
+            <option value="Paradicsom">Paradicsom</option>
+        </select>
+    </div>
+    <div>
+        <label for="feltet" class="form-label">Feltét:</label>
+        <label for="kukorica" class="form-label">Kukorica:</label>
+        <input type="checkbox" name="Kukorica" id="kukorica">
+        <label for="szalami" class="form-label">Szalami:</label>
+        <input type="checkbox" name="Szalámi" id="szalami">
+        <label for="sonka" class="form-label">Sonka:</label>
+        <input type="checkbox" name="Sonka" id="sonka">
+        <label for="bacon" class="form-label">Bacon:</label>
+        <input type="checkbox" name="Bacon" id="bacon">
+        <label for="tojas" class="form-label">Tojás:</label>
+        <input type="checkbox" name="Tojás" id="tojas">
+    </div>
+    <div>
+        <label for="megjegyzes" class="form-label">Megjegyzés:</label>
+        <input type="text" name="Megjegyzés:" id="megjegyzes">
+    </div>
+    <button type="submit" id="megjelenites" >felvétel</button>
+    <script>
+        const nev = document.getElementById("nev");
+        const telefonszam = document.getElementById("telefonszam");
+        const iranyitoszam = document.getElementById("iranyitoszam");
+        const varos = document.getElementById("varos");
+        const utaca = document.getElementById("utca");
+        const hazszam = document.getElementById("hazszam");
+        const alap = document.getElementById("alap");
+        const kukorica = document.getElementById("kukorica");
+        const szalami = document.getElementById("szalami");
+        const sonka = document.getElementById("sonka");
+        const bacon = document.getElementById("bacon");
+        const tojas = document.getElementById("tojas");
+        const megjegy = document.getElementById("megjegyzes");
+
+        megjegyzes.addEventListener('click', () =>{ 
+            console.log(nev)
+            console.log(telefonszam)
+            console.log(iranyitoszam)
+            console.log(varos)
+            console.log(utaca)
+            console.log(hazszam)
+            console.log(alap)
+            console.log(kukorica)
+            console.log(sonka)
+            console.log(bacon)
+            console.log(tojas)
+            console.log(megjegy)
+
+        })
+    </script>
+</body>
+</html>

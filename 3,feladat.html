@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.Feladat</title>
+</head>
+<body>
+    <div>
+        <label for="a" class="form-label">Téglalap egyik oldala:</label>
+        <input type="number" name="Téglalap egyik oldala:" id="a">
+    </div>
+    <div>
+        <label for="b" class="form-label">Téglalap másik oldala:</label>
+        <input type="number" name="Téglalap másik oldala:" id="b">
+    </div>
+    <button type="submit" id="hozzaad">megoldas</button>
+    <p id="megoldas"></p>
+    <script>
+        const a = parseFloat(document.getElementById("a").value)
+        const b = parseFloat(document.getElementById("b").value)
+        const hozzaad = document.getElementById("hozzaad")
+        const megoldas = document.getElementById("megoldas")
+
+        hozzaad.addEventListener('click', ()=>{
+            const ker = a+b;
+            const ter = a*b;
+
+            megoldas.innerHTML= "Kerület: "+ ker +"m"+ " Terület: "+ter+"m"
+        })
+    </script>
+</body>
+</html>
